@@ -7,7 +7,7 @@ h1{
   font-size: 25px;
   margin-top: 4px;
   margin-bottom: 2px;
-  background-color: rgb(248, 182, 248);
+  background-image:linear-gradient(to bottom, rgb(252, 205, 236), rgb(214, 114, 214)) ;
 }
 h2{
   font-size: 22px;
