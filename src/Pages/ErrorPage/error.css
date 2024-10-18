@@ -1,0 +1,21 @@
+.errorPage{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    text-shadow: none;
+    margin-left: 19px;
+    box-shadow: none;
+}
+h2{
+    color: black;
+    margin-bottom: 19px;
+    margin-left: 19px;
+
+}
+.Link{
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(229, 171, 255);
+    border-radius: 12px;
+    
+}

@@ -1,0 +1,59 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 9px;
+    width: 80vw;
+    height: 60vh;
+    border: none;
+    box-shadow: 2px 2px 8px gray;
+    border-radius: 5px;
+    bottom: 100px;
+
+}
+label{
+    font-style: oblique;
+}
+input{
+    height: auto;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 5px;
+}
+button{
+    font-size: 18px;
+    color: white;
+    height: 10%;
+    background-color: rgb(186, 101, 152);
+    border: none;
+    box-shadow: inset 0px -5px 6px pink;
+}
+button:hover{
+    background-color: purple;
+    box-shadow: inset 0px -5px 6px pink;
+}
+
+@media (min-width:480px) and (max-width:640px) {
+    form{
+        width: 50vw;
+    }
+}
+@media (min-width:641px) and (max-width:780px) {
+    form{
+        width: 40vw;
+    }
+}
+@media (min-width:781px) and (max-width:1010px) {
+    form{
+        width: 30vw;
+    }
+}
+@media (min-width:1011px) and (max-width:1600px) {
+    form{
+        width: 25vw;
+    }
+}
+@media (min-width:1601px) {
+    form{
+        width: 20vw;
+    }
+}
