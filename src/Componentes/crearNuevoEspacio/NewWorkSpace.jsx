@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './formNewWs.css'
+import './formNewWS.css'
 import { crearWorkspace, obtenerWorkspaces } from '../data'
 import {  useNavigate } from 'react-router-dom'
 const NewWorkSpace = () => {
