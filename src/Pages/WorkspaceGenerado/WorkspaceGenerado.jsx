@@ -7,27 +7,31 @@ import Mensajes from '../../Componentes/Mensajes/Mensajes';
 import NewCanal from '../../Componentes/crearCanal/NewCanal';
 const WorkspaceGenerado = () => {
   const [menuCanales, setMenuCanales] = useState(false)
-  const [nuevoCanal, setnuevoCanal] = useState(false)
-
+  const [formCanales, setformCanales] = useState(false)
   const { workspace_id } = useParams()
   const workspace = obtenerWorkspacePorId(workspace_id)
 
   return (
-    <div>
+    <div className='padre'>
       <div>
         <h1>{workspace.name} </h1>
         <h2 className='canalesmenu' onClick={() => setMenuCanales(!menuCanales)}
         >Canales</h2>
-        <button className='agregarCanal' onClick={() => setnuevoCanal(!nuevoCanal)}> + canal</button>
-        <span className='menuNuevoCanal'>{nuevoCanal && <NewCanal />} </span>
-        <span className='canalesCreados'>{menuCanales && <Canal channels={workspace.canales} />} </span>
-        <div>
+        <button className='agregarCanal' onClick={() => setformCanales(!formCanales)}> + canal</button>
+        <span>{formCanales && <NewCanal />} </span>
+        <div className='canalesCreados' >
+          <span>
+            {menuCanales && <Canal channels={workspace.canales} />}
+          </span>
         </div>
+        <div className='mensajesWOrkspace'>
         <Mensajes />
+        </div>
       </div>
 
 
     </div>
+
   )
 }
 

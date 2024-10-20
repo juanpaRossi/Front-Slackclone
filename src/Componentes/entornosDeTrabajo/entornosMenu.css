@@ -28,7 +28,6 @@ h3 {
 .cajaWork{
     display: flex;
     flex-direction: column;
-    z-index: 0;
     overflow-y: scroll;
     max-height: 400px;
     box-shadow: 10px 8px 8px rgb(195, 192, 192);

@@ -1,0 +1,20 @@
+.renderChat{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    padding: 3px;
+    height: 60%;
+    width: 80%;
+    background-image: linear-gradient(to 
+    left, rgb(252, 227, 232), white);
+    position: absolute;
+    right: 10px;
+}
+@media (max-width:800px) {
+    .renderChat{
+        width: 100%;
+        top:120px;
+        right: 0%;
+    }
+}

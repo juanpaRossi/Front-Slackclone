@@ -5,13 +5,22 @@ import { Link } from 'react-router-dom';
 
 const Mensajes = () => {
     const [textarea, setTextarea] = useState('')
-    const handleSubmitmsj = (e) => {
-        e.preventDefault()
+    const[mensaje,setMensaje]=useState('')
 
+    React.useEffect(()=>{
+        const mensajeLocal=localStorage.getItem('mensaje');
+        if(mensajeLocal){
+            setMensaje(mensajeLocal);
+        }
+    },[])
+
+    const handleGuardar=(e)=>{
+        e.preventDefault();
+        localStorage.setItem('mensaje',textarea);
+        setMensaje(textarea)
     }
-    localStorage.setItem('mensajes', JSON.stringify(textarea))
-
-    const mostrarME = localStorage.getItem('mensajes')
+    
+  
     return (
         <div>
             <div>
@@ -20,9 +29,9 @@ const Mensajes = () => {
                 </span>
             </div>
             <div className='Mensajes'>
-                <form onSubmit={handleSubmitmsj} className='formMensaje'>
+                <form className='formMensaje'>
                     <textarea value={textarea} onChange={(e) => setTextarea(e.target.value)} className='menInput'></textarea>
-                    <button type='submit' className='butMsj'>Enviar</button>
+                    <button onClick={handleGuardar} className='butMsj'>Enviar</button>
                 </form>
                 <span>        <Link to={'/home'} className='link_work'><GiExitDoor />  </Link>
                 </span>
@@ -30,6 +39,7 @@ const Mensajes = () => {
             </div>
         </div>
     )
-}
 
+
+}
 export default Mensajes

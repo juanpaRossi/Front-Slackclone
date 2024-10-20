@@ -1,3 +1,6 @@
+.padre{
+    background-image: linear-gradient(to top, white,rgb(253, 223, 227));
+}
 .formMensaje{
     display: flex;
     box-shadow: none;
@@ -12,8 +15,11 @@
     position: absolute;
     left: 120px;
     top: 40px;
+    z-index: 1;
 
 }
+
+
 .canalesmenu{
     display: inline-block;
     border-radius: 7px;
@@ -65,10 +71,28 @@ color: blueviolet;
     height: 22px;
     width: 75px;
 }
-
-@media (max-width :600px) {
+.canalesCreados{
+    width: 100%;
+}
+.ingresar{
+    color: rgb(99, 14, 102);
+    text-shadow: 2px 1px 1px rgb(248, 140, 239);
+    position: relative;
+    right: 5px;
+    z-index: 0;
+}
+.ingresar:visited{
+    position: relative;
+    right: 5px;
+}
+@media (max-width :799px) {
     .menInput{
         left: 2px;
     }
-    
+
+}
+@media (min-width:800px) {
+    .canalesCreados{
+        width: 20%;
+    }
 }

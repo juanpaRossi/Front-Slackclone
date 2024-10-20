@@ -6,7 +6,7 @@ const WorkSpace = () => {
 
   return (
     <div>
-        <div>
+        <div className='divEntornos'>
         <MisEntornos/>
         </div>
         <div className='link'>
