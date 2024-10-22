@@ -27,8 +27,6 @@ const WorkspaceGenerado = () => {
             
   
           </span>
-          <span>
-          </span>
         </div>
         <div>
       

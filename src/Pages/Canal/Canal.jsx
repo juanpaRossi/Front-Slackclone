@@ -3,7 +3,6 @@ import { v4 as uuidv4 } from 'uuid'
 import RenderMensajes from '../../Componentes/RenderMensajes/RenderMensajes'
 import { obtenerCanal } from '../../Componentes/canal'
 const Canal = ({ channels }) => {
-  const [mensajesCanal, setmensajesCanal] = useState(false)
   const canales = obtenerCanal()
 
 
