@@ -32,6 +32,7 @@ const Mensajes = () => {
                 <form className='formMensaje'>
                     <textarea value={textarea} onChange={(e) => setTextarea(e.target.value)} className='menInput'></textarea>
                     <button onClick={handleGuardar} className='butMsj'>Enviar</button>
+                    <span>{mensaje} </span>
                 </form>
                 <span>        <Link to={'/home'} className='link_work'><GiExitDoor />  </Link>
                 </span>

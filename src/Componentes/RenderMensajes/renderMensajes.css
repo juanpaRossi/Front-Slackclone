@@ -10,11 +10,13 @@
     left, rgb(252, 227, 232), white);
     position: absolute;
     right: 10px;
+    
 }
 @media (max-width:800px) {
     .renderChat{
         width: 100%;
-        top:120px;
+        top:59%;
+        height: 19%;
         right: 0%;
     }
 }

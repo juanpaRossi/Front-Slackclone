@@ -1,3 +1,5 @@
+import{ v4 as uuidv4} from 'uuid'
+
 const obtenerCanal=()=>{
     let canales=localStorage.getItem('canales')
     if(canales){
@@ -17,9 +19,9 @@ const obtenerCanal=()=>{
     }   
     
     
-    const obtenerWorkspacePorId=(id)=>{
+    const obtenerCanalPorId=(id)=>{
         let canales=obtenerCanal()
         let canal=canales.find(canal=>canal.id==id)
         return canal
     }
-    export {obtenerCanal,crearNuevoCanal,obtenerWorkspacePorId}
+    export {obtenerCanal,crearNuevoCanal,obtenerCanalPorId}
